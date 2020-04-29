@@ -14,8 +14,7 @@ public class Calculator {
         float monthlyInterest = getMonthlyInterest();
         float numberOfPayments = getNumberOfPayments();
 
-        return mortgage.principal
-                * (Math.pow(1 + monthlyInterest, numberOfPayments) - Math.pow(1 + monthlyInterest, numberOfPaymentsMade))
+        return mortgage.principal * (Math.pow(1 + monthlyInterest, numberOfPayments) - Math.pow(1 + monthlyInterest, numberOfPaymentsMade))
                 / (Math.pow(1 + monthlyInterest, numberOfPayments) - 1);
     }
 
@@ -23,8 +22,7 @@ public class Calculator {
         float monthlyInterest = getMonthlyInterest();
         float numberOfPayments = getNumberOfPayments();
 
-        return mortgage.principal
-                * (monthlyInterest * Math.pow(1 + monthlyInterest, numberOfPayments))
+        return mortgage.principal * (monthlyInterest * Math.pow(1 + monthlyInterest, numberOfPayments))
                 / (Math.pow(1 + monthlyInterest, numberOfPayments) - 1);
     }
 
