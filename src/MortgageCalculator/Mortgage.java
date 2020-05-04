@@ -1,8 +1,6 @@
 package MortgageCalculator;
 
-import static MortgageCalculator.Console.readNumber;
-
-public class Mortgage {
+public class Mortgage extends Console {
 
     int principal;
     float annualInterest;
