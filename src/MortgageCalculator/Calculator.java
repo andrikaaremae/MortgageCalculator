@@ -4,8 +4,8 @@ public class Calculator {
 
     private final static byte MONTHS_IN_YEAR = 12;
     private final static byte PERCENT = 100;
-
     private Mortgage mortgage;
+
     public Calculator(Mortgage mortgage) {
         this.mortgage = mortgage;
     }
